@@ -1,12 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import HomeScreen from './screens/HomeScreen';
+import ProductScreen from './screens/ProductScreen';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Mi primer proyecto con React js</h1>
-    </div>
+    <BrowserRouter>
+      <div>
+        <header>
+          <a href="/">Tienda Virtual MinTIC</a>
+        </header>
+        <main>
+          <Routes>
+            <Route path="/product/:slug" element={<ProductScreen/>}/>
+            <Route path="/" element={<HomeScreen />} />
+          </Routes>
+        </main>
+      </div>
+    </BrowserRouter>
   );
 }
-
 export default App;
