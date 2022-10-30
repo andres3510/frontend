@@ -3,20 +3,12 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-header {
-  background-color: #404040;
-  height: 80px;
-}
-
-header a{
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-    font-size: 25px;
+.site-container {
+  min-height: 100vh;
 }
 
 main {
-  padding: 1rem;
+  flex: 1;
 }
 
 .products{
