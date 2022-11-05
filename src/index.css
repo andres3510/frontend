@@ -30,3 +30,13 @@ main {
 .product-info{
     padding: 1rem;
 }
+
+.img-large{
+    max-width: 800px;
+    width: 100%;
+}
+
+.btn-addcar {
+  background-color: orange;
+  border-radius: 25%;
+}
